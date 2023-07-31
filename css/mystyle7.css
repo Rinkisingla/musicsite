@@ -1,0 +1,98 @@
+body
+{
+   font-family: 'Flamenco', cursive;
+}
+
+.sidebar
+{
+ position:fixed;
+ right:-290px;
+ width: 250px;
+height: 100%;
+background: #042331;
+ transition: all .5s ease;
+ padding-left: 40px;
+}
+.sidebar .head
+{
+  font-size: 22px;
+  color:white;
+  text-align:center;
+  line-height: 74px;
+  background: #063146;
+  user-select: none;
+
+}
+.sidebar  li
+{
+  list-style: none;
+}
+.sidebar ul a
+{
+ height: 100%;
+ width: 120%;
+ line-height: 65px;
+ font-size: 20px;
+ color: white;
+ padding-right: 30px;
+ box-sizing: border-box;
+ border-top: 1px solid rgba(255,255,255,-1);
+ list-style: none;
+  text-decoration: none;
+ transition: .4s;
+}
+.sidebar ul li:hover a
+{
+ padding-right: 50px;
+}
+.sidebar ul a i
+{
+ margin-right: 14px;
+}
+#check
+{
+  display:none;
+}
+label #btn, label #cancel
+{
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn
+{
+ right: 14px;
+ top: 32px;
+ font-size: 23px;
+ color: white;
+ padding: 6px 12px;
+ transition: all .5s;
+ background-color: transparent;
+}
+label #cancel
+{
+  z-index: 1111;
+  right: -185px;
+  top: 37px;
+  font-size: 30px;
+  color:#0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar
+{
+  right: 0;
+}
+#check:checked ~ label #btn
+{
+  right: 230px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel
+{
+  right: 195px;
+}
+
+

@@ -1,0 +1,415 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body
+{
+  font-size: 20px;
+  overflow-x: hidden;
+}
+header
+{
+  background:black;
+  height: 23vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 220vh;
+  background-position: center;
+  font-family: 'Flamenco', cursive;
+  color: white;
+}
+.clearfix:after
+{
+  content: ".";
+  visibility:hidden;
+  display:block;
+  height:0px;
+  clear:both;
+}
+
+.logo1
+{
+  height:120px;
+  width:auto;
+  float:left;
+  margin-top:30px;
+  border-radius:60px;
+}
+.main-nav1
+{
+  float:left;
+   position: absolute;
+}
+.main-nav1 li
+{
+  display: inline-block;
+  list-style: none;
+   padding:5px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: 100;
+}
+.main-nav1 li a
+{
+  padding:5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+.main-nav1 li a:hover
+{
+  border-bottom:2px solid red;
+}
+
+.main-nav
+{
+  float:right;
+  margin-top:40px;
+  margin-left: 38vh;
+}
+.main-nav li
+{
+  display: inline-block;
+   list-style: none;
+   margin-left:40px;
+}
+.main-nav li a
+{
+  padding:5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+.main-nav li a:hover
+{
+  border-bottom:2px solid red;
+}
+section{
+  min-height: 53vh;
+  display:flex;
+}
+.row
+ {
+  max-width:1180;
+  margin:0 auto;
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+ }
+ .col
+ {
+    flex: 1;
+    margin: 15px;
+    min-width: 30px;
+ }
+
+.single-album
+{
+    object-fit: cover;
+    margin-left: 25%; 
+    min-width: 300px;
+  width: 20%;
+  height: 60%;
+  position: relative;
+  overflow:hidden;
+  box-shadow:5px 5px 15px #000;
+  border-radius:30px;
+}
+.album-img
+{
+ overflow:hidden;
+  position:relative;
+  height: 120vh;
+  width: 110%;
+  object-fit: fill;
+}
+.album-img img
+{
+  height: 65vh;
+ width:100%;
+ object-fit: fill;
+}
+.single-album:hover .album-img img
+{
+  transform:scale(1.5,1.5);
+
+}
+.album-content
+{
+ height:70px;
+ overflow:hidden;
+ text-align:center;
+ position:absolute;
+ bottom:0;
+ transition: all .4s;
+ background: purple;
+}
+.single-album:hover .album-content
+{
+ height:100px;
+ background:#000;
+}
+.album-info
+{
+  transition:all .5s;
+  padding:5px 6px 5px 6px;
+
+}
+.album-info h3
+{
+  font-size:16px;
+  color:#fff;
+  margin:5px;
+  text-transform:uppercase;
+  width: 30px;
+}
+.single-album:hover .album-info h3
+{
+  color:tomato;
+}
+.album-info p
+{
+  color:#fff;
+  margin-top:15px;
+}
+.album-text
+{
+ color:#fff;
+ padding:0 10px 5px;
+color:#fff;
+font-size: 60%;
+}
+footer
+ {
+    background:black;
+    color:#aaa;
+    font-size: 18px; margin-bottom: 0;
+    bottom: 0px;
+    width: 100%;
+    font-family: 'Flamenco', cursive;
+    }
+ .container
+ {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+ }
+  .box{
+    flex: 1;
+    margin: 15px;
+    min-width: 300px;
+    margin-bottom:5px;
+  }
+
+  #footer  img{
+    height: 25px;
+  }
+   .box .adjust p{
+     
+    font-size: 24px;
+    font-family: 'Flamenco', cursive;
+  }
+  .box h2
+  {
+    letter-spacing: 3px;
+    border-bottom: 2px solid #555;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .box h2::before{
+    content: " ";
+    width: 100px;
+    height: 100%;
+    border-bottom: 2px solid crimson;
+    position: absolute;
+  }
+  .box  ul{
+    margin:0;
+   list-style: none;
+   padding: 0;
+   padding-right: 5px;
+   color: #f82249;
+   font-size:18px;
+
+  }
+  .social a
+  {
+     font-size: 18px;
+      display: inline-block;
+      background:#222;
+      color: #aaa;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+  }
+   .social a:hover
+   {
+      background: red;
+      color:#fff;
+      border-bottom:2px solid red;
+ }
+ .box ul  a{color:eee;}
+ .box ul a:hover{ color:#f82249;}
+  .box p{
+    font-size: 24px;
+    margin-bottom: 0;
+    font-family: 'Flamenco', cursive;
+    color: #fff;
+  }
+ .box ul i{
+   padding-right: 5px;
+   color: #f82249;
+   font-size:18px;
+ }
+ .box ul li a{  
+  padding:10px 0;
+  text-decoration: none;
+}
+.box ul li { 
+  padding:10px 0;
+  
+}
+ .box ul li:first-child 
+ {
+    padding-top: 0;
+ }
+ .login-box 
+{
+ font-size:40px;
+ margin-bottom:50px;
+ padding:13px 0px;
+ text-align: center;
+}
+
+.textbox
+{
+   text-align: center;
+ width:100%;
+ overflow:hidden;
+ font-size:20px;
+ padding:8px 0;
+ margin:8px 0;
+ border-bottom:1px solid #eee;
+}
+.textbox i
+{
+  width:26px;
+  float:left;
+  text-align:center;
+}
+.textbox input
+{
+ border:none;
+ outline:none;
+ background:none;
+ color:white;
+ font-size:18px;
+ width:80%;
+ float:left;
+ margin:0 10px;
+}
+.btn1
+{
+   width:100%;
+   background:none;
+   border: 2px solid #aaa;
+   color:black;
+   padding:5px;
+   font-size:18px;
+   cursor:pointer;
+   margin:12px 0;
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration:none;
+  text-transform: uppercase;
+  border-radius:200px;
+  transition: background-color 0.2%, border 0.2%, color 0.2;
+}
+
+.btn1-nav{
+  background-color: #aaa;
+  border: 1px solid black;
+  color:black;
+}.btn1-nav:hover
+ {
+   background-color: black;
+   color: #aaa;
+ }
+
+
+
+.container1
+{
+   font-size: 14px;
+  text-align: center;
+}
+ .copyright{
+    padding-top:30px;
+  }
+.credits{
+    font-size: 13px;
+    color:#fff;
+  }
+  .credits a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+.mobile-icon
+{
+  display: none;
+}
+/*responsive quries*/
+@media only screen and (max-width: 1180px){
+  .main-content-header
+  {
+    width:100%;
+    padding: 0 2%;
+  }
+}
+@media only screen and (max-width: 998px){
+
+ h1{
+   font-size:200%;
+ }
+ 
+}
+@media only screen and (max-width: 768px){
+
+ h1{font-size:180%;}
+.main-nav{display: none; }
+.mobile-icon{
+  display: inline-block;
+  color: white;
+  float: right;
+  margin-top: 30px;
+  margin-right:20px;
+ }
+ .main-nav{float: left;}
+ .main-nav li
+ {
+   display:block;
+   margin-top:10px;
+ }
+}
+@media only screen and (max-width: 480px)
+{
+  .btn-full
+  {
+    margin-bottom: 20px;
+  }
+  h1{font-size:160%;}
+}
+

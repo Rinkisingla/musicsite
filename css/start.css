@@ -1,0 +1,85 @@
+body{
+	 font-family: Tahoma, Geneva, Sans-serif;
+	 color: #fff;
+	 background: url(../images/2.jpg);
+	 background-size: cover;
+}
+.signin{
+	background:rgba(44, 62, 80, 0.7);
+	padding: 40px;
+	width: 250px;
+	margin: auto;
+	margin-top: 80px;
+	height: 400px;
+	margin-left: 180x;
+}
+ form{
+ 	width: 240px;
+ 	text-align: center;
+ }
+ 
+ .button
+ {
+ 	border:none;
+ 	width: 190px;
+ 	background:white;
+ 	color: #000;
+ 	font-size: 16px;
+ 	line-height: 25px;
+ 	padding: 10px 0;
+ 	border-radius: 15px;
+ 	cursor: pointer;
+ 	margin-top: 25px;
+ }
+ .button:hover
+ {
+ 	color: #fff;
+ 	background-color: black;
+ }
+ h2{
+ 	 color:white;
+ }
+  a{
+  	color: red;
+  	text-decoration: blink;
+  }
+  a:hover
+  {
+  	color: black;
+  }
+  .container2{
+  	display: flex;
+  	flex-direction: row;
+  	width: 100%;
+  }
+  ::placeholder{
+  	color: aliceblue;
+  	opacity: 0.8;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
